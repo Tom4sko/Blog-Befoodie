@@ -1,0 +1,170 @@
+*{
+  margin:0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*ŠTÝLY PRE FONTY*/
+h1{
+  font-size:60px;
+}
+h2{
+  font-size:40px;
+}
+h3{
+  font-size:35px;
+}
+h4,h5,h6{
+  font-size:20px;
+}
+p{
+  font-size:16px;
+}
+h1,h2,h3,h4,h5,h6,p,a,li{
+  margin-bottom: 0.7em;
+}
+main{
+  margin-top:60px;
+}
+/*každý druhý section element 
+bude mať sivé pozadie*/
+main section:nth-child(even){
+  background-color: #f7f7f7;
+}
+/*ŠTÝLY PRE HEADER*/
+header{
+  position: fixed;  
+  top:0;
+  left:0;
+  right:0;
+  height:60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1; 
+  max-width: 100%; 
+}
+.main-menu li{
+  display:inline;
+  margin-left: 20px;
+}
+.main-menu li a{
+  text-decoration: none;
+  color:black;
+}
+.main-menu li:hover a{
+ text-decoration: underline;
+}
+.hamburger{
+  display: none;
+}
+
+/*ŠTÝLY PRE LAYOUT*/
+.container{
+  padding:3% 10% 3% 10%;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  padding: 25px 0px;
+  gap:20px;
+}
+/*šírka stĺpcov .col, ktoré sa nachádzajú pod class .row*/
+.row .col-25{
+  width:25%;
+}
+.row .col-33{
+  width:33%;
+}
+.row .col-50{
+  width:50%;
+}
+.row .col-100{
+  width:100%;
+}
+/*FARBY POZADIA*/
+.bg-dark{
+  background-color:rgb(25, 25, 25);
+}
+/*FARBY TEXTOV*/
+.text-dark{
+  color:rgb(25, 25, 25);
+}
+.text-white{
+  color:white;
+}
+
+/*ZAROVNANIE TEXTOV*/
+.text-center{
+  text-align:center;
+}
+.text-left{
+  text-align:left;
+}
+.text-right{
+  text-align:right;
+}
+
+/*FOOTER*/
+
+footer p a{
+  text-decoration: none;
+  color:white;
+}
+@media screen and (max-width: 600px) {
+  main{
+    margin-top:0px;
+  }
+  h1{
+    font-size:40px;
+  }
+  h2{
+    font-size:30px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .row .col-25, .row .col-33, .row .col-50{
+    width: 100%;
+  }
+  .main-menu{
+    display: none;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .main-header{
+    position:relative;
+    top:0px;
+  }
+
+  /*ŠTÝLY PRE HEADER*/
+  .main-menu{
+    display: none;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .main-header{
+    position:relative;
+    top:0px;
+  }
+  .main-menu.responsive {
+    display: block;
+    position: absolute;
+    background-color: #f7f7f7;
+    width:100%;
+    top:60px;
+    left:0px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .main-menu.responsive li{
+    display: block;
+    margin-left:0px;
+  }  
+  
+}
+

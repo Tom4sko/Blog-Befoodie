@@ -1,0 +1,11 @@
+/* banner*/
+section.banner{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }

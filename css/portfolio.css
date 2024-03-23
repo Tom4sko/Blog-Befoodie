@@ -1,0 +1,39 @@
+.portfolio{
+    height:250px;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+  }
+  .portfolio:hover{
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+  }
+  #portfolio-1{
+    background-image: url('../img/portfolio1.jpg');
+  }
+  #portfolio-2{
+    background-image: url('../img/portfolio2.jpg');
+  }
+  #portfolio-3{
+    background-image: url('../img/portfolio3.jpg');
+  }
+  #portfolio-4{
+    background-image: url('../img/portfolio4.jpg');
+  }
+  #portfolio-5{
+    background-image: url('../img/portfolio5.jpg');
+  }
+  #portfolio-6{
+    background-image: url('../img/portfolio6.jpg');
+  }
+  #portfolio-7{
+    background-image: url('../img/portfolio7.jpg');
+  }
+  #portfolio-8{
+    background-image: url('../img/portfolio8.jpg');
+  }
+  

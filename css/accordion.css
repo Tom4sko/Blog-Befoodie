@@ -1,0 +1,29 @@
+.accordion .answer{
+    display:none;
+}
+.question{
+    background-color:#f7f7f7;
+    color:black;
+    padding:2%;
+}
+
+.accordion.active .answer{
+    display:block;
+    background-color:#f7f7f7;
+    color:black;
+    padding:2%;
+}
+
+.question::before {
+    content: '+ ';
+}
+
+.question:hover, 
+.accordion.active .question{
+    background-color:#bfbcbc;
+    cursor:pointer;
+}
+
+.accordion.active .question::before {
+    content: '- ';
+}
