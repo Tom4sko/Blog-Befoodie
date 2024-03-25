@@ -19,13 +19,13 @@
   <main>
     <section class="banner">
       <div class="container text-white">
-        <h1>Kontakt</h1>
+        <h1>Contact</h1>
       </div>
     </section>
     <section>
       <div class="container">
         <div class="col-100 text-center">
-          <p><strong><em>Elit culpa id mollit irure sit. Ex ut et ea esse culpa officia ea incididunt elit velit veniam qui. Mollit deserunt culpa incididunt laborum commodo in culpa.</em
+          <p><strong><em>Explore a world of gastronomic delights and culinary inspiration with BeFoodie, where we share delicious recipes, insightful cooking tips, and delightful food stories to satisfy your inner foodie.</em
           ></strong></p>
         </div>
       </div>
@@ -34,20 +34,20 @@
     <section class="container">
       <div class="row">
         <div class="col-50"> 
-          <h3>Máte otázky?</h3>
-          <p>Incididunt mollit quis eiusmod tempor voluptate duis eu enim amet excepteur cupidatat magna velit. </p> 
-          <p>Velit id ad laborum velit commodo.</p>
-          <p>Consectetur laborum aliqua nulla anim cupidatat consectetur est veniam cupidatat.</p>
+          <h3>Any Questions?</h3>
+          <p>Have any burning questions about our food blog?</p> 
+          <p> Feel free to reach out to us for any inquiries you may have about recipes, cooking techniques.</p>
+          <p>We're here to help you navigate the delicious world of BeFoodie!</p>
         </div>
         <div class="col-50 text-right">
-          <h3>Napíšte nám</h3>
+          <h3>Contact Us</h3>
           <form id="contact" action="thankyou.html">
             <input type="text" placeholder="Vaše meno" id ="meno"  required><br>
             <input type="email" placeholder="Váš email" id="email" required><br>
             <textarea name="" placeholder="Vaša správa" id="sprava"></textarea><br>
             <input type="checkbox" name="" id="" required>
-            <label for=""> Súhlasím so spracovaním osobných údajov.</label><br>
-            <input type="submit" value="Odoslať">
+            <label for="">Accept of all rules</label><br>
+            <input type="submit" value="Send">
           </form>
         </div>
       </div>

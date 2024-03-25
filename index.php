@@ -28,7 +28,7 @@
       <section class="container">
         <div class="row">
           <div class="col-100 text-center">
-              <p><strong><em>Elit culpa id mollit irure sit. Ex ut et ea esse culpa officia ea incididunt elit velit veniam qui. Mollit deserunt culpa incididunt laborum commodo in culpa.</em></strong></p>
+              <p><strong><em>Explore a world of gastronomic delights and culinary inspiration with BeFoodie, where we share delicious recipes, insightful cooking tips, and delightful food stories to satisfy your inner foodie.</em></strong></p>
           </div>
         </div>
       </section>
@@ -36,15 +36,15 @@
       <section class="container">
         <div class="row">
           <div class="col-50">
-            <h2>Mollit cupidatat velit quis irure non eiusmod culpa cillum velit magna est aliquip.</h2>
+            <h2>Savoring flavors, sharing stories, celebrating culinary passions.</h2>
           </div>
           <div class="col-50">
             <?php
               include_once "assets/functions.php";
               pridajPozdrav();
             ?>
-            <p>Nulla dolore sit esse pariatur culpa sint nulla fugiat nulla ut. Sit adipisicing fugiat id consequat qui est. Nulla ea aliquip culpa nulla mollit do excepteur ex ullamco consequat tempor consectetur. Tempor et ea voluptate irure est magna magna reprehenderit qui non dolore. Consequat id ad cillum do qui. Proident ipsum enim eiusmod fugiat quis anim consequat ullamco mollit excepteur. Eiusmod eu ad irure anim velit laborum commodo nostrud pariatur id ea ad.</p>
-            <p>Incididunt pariatur ipsum in culpa sit cillum consequat nostrud do. Esse commodo ad qui ea. Pariatur elit mollit deserunt aute do culpa eu veniam pariatur in adipisicing qui adipisicing irure. Est minim sint ipsum nulla eiusmod. Amet do officia consectetur labore. Id aute labore culpa aliquip. Adipisicing mollit excepteur Lorem quis elit ipsum irure quis occaecat qui consectetur ad irure dolor.</p>
+            <p>Welcome to BeFoodie, where passion meets palate! Dive into a world of culinary delights and gastronomic adventures. Whether you're a seasoned chef or a kitchen novice, our collection of tantalizing recipes, cooking tips, and food stories will satisfy your cravings and inspire your culinary creativity. Join us on this flavorful journey as we explore the art of cooking and the joy of sharing delicious meals with loved ones. Let's embark on a mouthwatering adventure together!.</p>
+            <p>Discover the essence of food through our lens – where every dish tells a story, every flavor evokes a memory, and every meal is an opportunity to create unforgettable moments. At BeFoodie, we're not just about recipes; we're about fostering a community united by a love for all things food. Whether you're seeking kitchen inspiration, culinary guidance, or simply a place to connect with fellow food enthusiasts, you've found your home here. Let's savor the journey together, one bite at a time.</p>
           </div>
         </div>
       </section>

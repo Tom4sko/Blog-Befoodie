@@ -30,8 +30,11 @@ main{
 /*každý druhý section element 
 bude mať sivé pozadie*/
 main section:nth-child(even){
-  background-color: #f7f7f7;
+  background-color: #191919;
+  color: #FAFAFA;
+  margin-top: -4px;
 }
+
 /*ŠTÝLY PRE HEADER*/
 header{
   position: fixed;  
@@ -42,9 +45,19 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: #f0b840;
   z-index: 1; 
   max-width: 100%; 
+}
+header img {
+  width: 200px;
+  height: auto;
+}
+@media screen and (max-width: 1450px) {
+  header img {
+    width: 100px;
+    height: auto;
+  }
 }
 .main-menu li{
   display:inline;
@@ -53,6 +66,8 @@ header{
 .main-menu li a{
   text-decoration: none;
   color:black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .main-menu li:hover a{
  text-decoration: underline;
@@ -86,7 +101,7 @@ header{
 }
 /*FARBY POZADIA*/
 .bg-dark{
-  background-color:rgb(25, 25, 25);
+  background-color:#191919;
 }
 /*FARBY TEXTOV*/
 .text-dark{
@@ -113,7 +128,7 @@ footer p a{
   text-decoration: none;
   color:white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   main{
     margin-top:0px;
   }
@@ -154,7 +169,7 @@ footer p a{
   .main-menu.responsive {
     display: block;
     position: absolute;
-    background-color: #f7f7f7;
+    background-color: #f0b840;
     width:100%;
     top:60px;
     left:0px;
