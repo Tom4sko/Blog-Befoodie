@@ -183,3 +183,40 @@ footer p a{
   
 }
 
+/*ŠTÝLY PRE DARK MÓD*/
+body.dark-theme {
+  background-color: #191919;
+  color: #FAFAFA;
+}
+
+/* HEADER A NAVBAR */
+header.dark-theme {
+  background-color: #333; /* Dark background for header */
+}
+
+.main-menu.dark-theme li a {
+  color: #FAFAFA; /* White text color for links */
+}
+
+.main-menu.dark-theme li:hover a {
+  text-decoration: none;
+}
+
+.main-menu.dark-theme.responsive {
+  background-color: #333; /* Dark background for responsive menu */
+}
+
+.modes-button {
+  background-color: red;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.modes-button:hover {
+  background-color: rgb(107, 29, 29);
+}

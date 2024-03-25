@@ -17,11 +17,6 @@
   ?> 
 
   <main>
-    <section class="banner">
-      <div class="container text-white">
-        <h1>Contact</h1>
-      </div>
-    </section>
     <section>
       <div class="container">
         <div class="col-100 text-center">
@@ -41,10 +36,10 @@
         </div>
         <div class="col-50 text-right">
           <h3>Contact Us</h3>
-          <form id="contact" action="thankyou.html">
-            <input type="text" placeholder="Vaše meno" id ="meno"  required><br>
-            <input type="email" placeholder="Váš email" id="email" required><br>
-            <textarea name="" placeholder="Vaša správa" id="sprava"></textarea><br>
+          <form id="contact" action="db/spracovanieFormulara.php" method="GET">
+            <input type="text" placeholder="Vaše meno" id="meno" name="meno" required><br>
+            <input type="email" placeholder="Váš email" id="email" name="email" required><br>
+            <textarea placeholder="Vaša správa" id="sprava" name="sprava"></textarea><br>
             <input type="checkbox" name="" id="" required>
             <label for="">Accept of all rules</label><br>
             <input type="submit" value="Send">

@@ -25,3 +25,27 @@ hamburger.onclick = function() {myNav()};
 hamburger.onclick = myNav;
 */
 
+// Get the button element
+var darkModeToggle = document.getElementById('dark-mode-toggle');
+
+// Add click event listener
+darkModeToggle.addEventListener('click', function() {
+    // Toggle the dark mode class on the body
+    document.body.classList.toggle('dark-theme');
+    
+    // Check if dark mode is enabled and set a cookie to remember the user's preference
+    var darkModeEnabled = document.body.classList.contains('dark-theme');
+    if (darkModeEnabled) {
+        document.cookie = 'darkMode=enabled; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    } else {
+        document.cookie = 'darkMode=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    }
+});
+
+// Check if dark mode is enabled from cookie when the page loads
+window.addEventListener('DOMContentLoaded', function() {
+    var darkModeCookie = document.cookie.match(/(^|;) ?darkMode=([^;]*)(;|$)/);
+    if (darkModeCookie && darkModeCookie[2] === 'enabled') {
+        document.body.classList.add('dark-theme');
+    }
+});
