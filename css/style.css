@@ -183,19 +183,22 @@ footer p a{
   
 }
 
-/*ŠTÝLY PRE DARK MÓD*/
+span {
+  font-size: 200px;
+}
+
+/* Proste dark mode */
 body.dark-theme {
   background-color: #191919;
   color: #FAFAFA;
 }
 
-/* HEADER A NAVBAR */
 header.dark-theme {
-  background-color: #333; /* Dark background for header */
+  background-color: #333;
 }
 
 .main-menu.dark-theme li a {
-  color: #FAFAFA; /* White text color for links */
+  color: #FAFAFA;
 }
 
 .main-menu.dark-theme li:hover a {
@@ -203,7 +206,7 @@ header.dark-theme {
 }
 
 .main-menu.dark-theme.responsive {
-  background-color: #333; /* Dark background for responsive menu */
+  background-color: #333; 
 }
 
 .modes-button {
@@ -219,4 +222,64 @@ header.dark-theme {
 
 .modes-button:hover {
   background-color: rgb(107, 29, 29);
+}
+
+/*  Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+
+/* Blog cast */
+.blog-main {
+  width: 75vw;
+  height: 140px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 9px;
+  margin-bottom: 8px;
+}
+
+.blog-main.dark-theme {
+  background-color: #333; /* tmavá šedá farba */
+  color: #FAFAFA;
+}
+
+.blog-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.blog-name,
+.blog-email {
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.blog-button {
+  width: 80px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: red;
+  color: #FAFAFA;
+  outline: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.blog-button:hover {
+  background-color: rgb(120, 14, 14);
+}
+
+.button-reply {
+  background-color: #5d9804 !important;
+}
+
+.button-reply:hover {
+  background-color: #375708 !important;
 }

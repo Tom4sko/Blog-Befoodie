@@ -9,7 +9,7 @@
         <li><a href="index.php">Domov</a></li>
         <li><a href="portfolio.php">Portfólio</a></li>
         <li><a href="qna.php">Q&A</a></li>
-        <li><a href="kontakt.php">Kontakt</a></li>
+        <li><a href="kontakt.php">Blog</a></li>
         <li id="dark-mode-toggle-li">
             <button id="dark-mode-toggle" class="modes-button">Dark Mode</button>
         </li>

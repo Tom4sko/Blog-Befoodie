@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
   
   <?php
@@ -29,22 +30,28 @@
     <section class="container">
       <div class="row">
         <div class="col-50"> 
-          <h3>Any Questions?</h3>
-          <p>Have any burning questions about our food blog?</p> 
-          <p> Feel free to reach out to us for any inquiries you may have about recipes, cooking techniques.</p>
-          <p>We're here to help you navigate the delicious world of BeFoodie!</p>
+          <h3>Contributions</h3>
+          <p><span>↓<span></p> 
         </div>
-        <div class="col-50 text-right">
-          <h3>Contact Us</h3>
-          <form id="contact" action="db/spracovanieFormulara.php" method="GET">
+        <div class="col-50 text-left">
+          <h3>Commit To Our Forum</h3>
+          <form id="contact" action="db/spracovanieFormulara.php" method="POST">
             <input type="text" placeholder="Vaše meno" id="meno" name="meno" required><br>
             <input type="email" placeholder="Váš email" id="email" name="email" required><br>
             <textarea placeholder="Vaša správa" id="sprava" name="sprava"></textarea><br>
-            <input type="checkbox" name="" id="" required>
-            <label for="">Accept of all rules</label><br>
+            <div class="form-checkbox">
+              <input type="checkbox" name="" id="" required>
+              <label for="">Accept of all rules</label><br>
+            </div>
             <input type="submit" value="Send">
           </form>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row blog-wrapper">
+        <?php include_once 'db/vypisUdajeFormulara.php'; ?>
       </div>
     </section>
   </main>
@@ -53,6 +60,7 @@
     include "components/footer.php"
   ?>
 
-  <script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
