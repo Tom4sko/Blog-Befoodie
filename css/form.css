@@ -18,5 +18,12 @@ input[type="submit"]{
 
 .form-checkbox {
     display: flex;
-    align-items: center; /* Zarovnať prvky do stredu vo vertikálnom smere */
+    align-items: center;
+}
+
+/* Button Forms */
+.button-forms {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
