@@ -21,11 +21,11 @@ function generateSlides($dir) {
     foreach ($files as $file) {
         echo '<div class="slide fade">';
         echo '<img src="' . $file . '">';
-        $filename = basename($file); // Získání názvu souboru
+        $filename = basename($file);
         // Získání textu k danému banneru
         if (isset($data["banner"][$filename])) {
             echo '<div class="slide-text">';
-            echo $data["banner"][$filename]; // Opraveno z $data["text_banner"][$filename]
+            echo $data["banner"][$filename];
             echo '</div>';
         } else {
             echo '<div class="slide-text">No text available for this banner</div>';

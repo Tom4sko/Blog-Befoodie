@@ -35,7 +35,7 @@
         </div>
         <div class="col-50 text-left">
           <h3>Commit To Our Forum</h3>
-          <form id="contact" action="db/spracovanieFormulara.php" method="POST">
+          <form id="contact" action="db/spracovanieFormulara.php" method="POST" onsubmit="alert('Your post has been succesfully attached!')">
             <input type="text" placeholder="Vaše meno" id="meno" name="meno" required><br>
             <input type="email" placeholder="Váš email" id="email" name="email" required><br>
             <textarea placeholder="Vaša správa" id="sprava" name="sprava"></textarea><br>

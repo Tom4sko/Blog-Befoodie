@@ -1,0 +1,25 @@
+{
+    "whoWeAre": {
+      "title": "Who We Are?",
+      "description": "We are BeFoodie, your ultimate destination for mouthwatering recipes, culinary inspiration, and food exploration. Join us on our delicious journey"
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "email": "tomaszelenak@gmail.com",
+      "phone": "0909500600"
+    },
+    "fastMenu": {
+      "title": "Fast Menu",
+      "links": [
+        {"text": "Domov", "url": "index.php"},
+        {"text": "Q&A", "url": "qna.php"},
+        {"text": "Kontakt", "url": "kontakt.php"}
+      ]
+    },
+    "whereWeAreLocated": {
+      "title": "Where We Are Located",
+      "mapSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10614.839764656655!2d18.0910518!3d48.3084298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba2bad032d96b960!2sFakulta%20pr%C3%ADrodn%C3%BDch%20vied%20a%20informatiky!5e0!3m2!1ssk!2ssk!4v1669307792855!5m2!1ssk!2ssk"
+    },
+    "creator": "Tomáš Zeleňák"
+  }
+  

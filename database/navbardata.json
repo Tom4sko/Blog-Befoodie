@@ -1,0 +1,6 @@
+[
+    {"label": "Domov", "link": "index.php"},
+    {"label": "Portfólio", "link": "portfolio.php"},
+    {"label": "Q&A", "link": "qna.php"},
+    {"label": "Blog", "link": "kontakt.php"}
+]
