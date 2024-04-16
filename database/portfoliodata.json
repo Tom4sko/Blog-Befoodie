@@ -1,0 +1,12 @@
+{
+    "websites": [
+        {"name": "Bryndzové Halušky", "image": "image1.jpg"},
+        {"name": "Kebab v Tortille", "image": "image2.jpg"},
+        {"name": "Koložvárska Kapusta", "image": "image3.jpg"},
+        {"name": "Hot Dog", "image": "image4.jpg"},
+        {"name": "Rezeň", "image": "image5.jpg"},
+        {"name": "Donuty", "image": "image6.jpg"},
+        {"name": "Chrumkavé Kura", "image": "image7.jpg"},
+        {"name": "Cestoviny", "image": "image8.jpg"}
+    ]
+}

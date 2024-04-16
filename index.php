@@ -18,7 +18,7 @@
     <main>
       <section class="slides-container">
         <?php
-            include_once "assets/functions.php";
+            include_once "db/functions.php";
             generateSlides(dir: "img/banner");
           ?>
         
@@ -41,7 +41,7 @@
           </div>
           <div class="col-50">
             <?php
-              include_once "assets/functions.php";
+              include_once "db/functions.php";
               pridajPozdrav();
             ?>
             <p>Welcome to BeFoodie, where passion meets palate! Dive into a world of culinary delights and gastronomic adventures. Whether you're a seasoned chef or a kitchen novice, our collection of tantalizing recipes, cooking tips, and food stories will satisfy your cravings and inspire your culinary creativity. Join us on this flavorful journey as we explore the art of cooking and the joy of sharing delicious meals with loved ones. Let's embark on a mouthwatering adventure together!.</p>

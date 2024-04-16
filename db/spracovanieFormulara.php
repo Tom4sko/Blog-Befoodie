@@ -2,8 +2,8 @@
 class Database {
     private $db_username = "root";
     private $db_password = "";
-    private $db_name = "formular";
-    private $db_host = "localhost";
+        private $db_name = "formular";`
+        private $db_host = "localhost"`;
     private $pdo;
 
     public function __construct() {
