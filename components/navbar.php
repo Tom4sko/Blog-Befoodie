@@ -6,12 +6,14 @@
     </div>
     <nav class="main-nav">
         <ul class="main-menu" id="main-menu">
-            <?php
+        <?php
             $navData = json_decode(file_get_contents('database/navbardata.json'), true);
-            foreach ($navData as $item) {
-                echo "<li><a href='" . $item['link'] . "'>" . $item['label'] . "</a></li>";
+            $navCount = count($navData);
+            foreach ($navData as $key => $item) {
+                $class = ($key >= $navCount - 2) ? 'nav-entry' : '';
+                echo "<li class='$class'><a href='" . $item['link'] . "'>" . $item['label'] . "</a></li>";
             }
-            ?>
+        ?>
             <li id="dark-mode-toggle-li">
                 <button id="dark-mode-toggle" class="modes-button">Dark Mode</button>
             </li>
