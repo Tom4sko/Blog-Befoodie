@@ -19,17 +19,18 @@
 
   <main>
     <section>
-    <section class="banner">
-      <div class="container text-white">
-        <h1>Blog</h1>
-      </div>
-    </section>
-      <div class="container">
-        <div class="col-100 text-center">
-          <p><strong><em>Explore a world of gastronomic delights and culinary inspiration with BeFoodie, where we share delicious recipes, insightful cooking tips, and delightful food stories to satisfy your inner foodie.</em
-          ></strong></p>
+      <section class="banner">
+        <div class="container text-white">
+          <h1>Blog</h1>
         </div>
-      </div>
+      </section>
+
+        <div class="container">
+          <div class="col-100 text-center">
+            <p><strong><em>Explore a world of gastronomic delights and culinary inspiration with BeFoodie, where we share delicious recipes, insightful cooking tips, and delightful food stories to satisfy your inner foodie.</em
+            ></strong></p>
+          </div>
+        </div>
     </section>
     
     <section class="container">
@@ -41,9 +42,9 @@
         <div class="col-50 text-left">
           <h3>Commit To Our Forum</h3>
           <form id="contact" action="db/spracovanieFormulara.php" method="POST" onsubmit="alert('Your post has been succesfully attached!')">
-            <input type="text" placeholder="Vaše meno" id="meno" name="meno" required><br>
-            <input type="email" placeholder="Váš email" id="email" name="email" required><br>
-            <textarea placeholder="Vaša správa" id="sprava" name="sprava"></textarea><br>
+            <input type="text" placeholder="Name of Recept" id="name-of-recept" name="name-of-recept" required><br>
+            <input type="text" placeholder="Ingredients" id="ingredients" name="ingredients" required><br>
+            <textarea placeholder="Recipe Procedure" id="recipe-procedure" name="recipe-procedure"></textarea><br>
             <div class="form-checkbox">
               <input type="checkbox" name="" id="" required>
               <label for="">Accept of all rules</label><br>
@@ -56,7 +57,7 @@
 
     <section>
       <div class="row blog-wrapper">
-        <?php include_once 'db/vypisUdajeFormulara.php'; ?>
+        <!-- Tu sa vypise ze co tam byt -->
       </div>
     </section>
   </main>
@@ -64,9 +65,6 @@
   <?php
     include "components/footer.php"
   ?>
-
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
 
 </body>
 </html>
