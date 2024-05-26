@@ -13,7 +13,7 @@
       "links": [
         {"text": "Domov", "url": "index.php"},
         {"text": "Q&A", "url": "qna.php"},
-        {"text": "Kontakt", "url": "kontakt.php"}
+        {"text": "Blog", "url": "blog.php"}
       ]
     },
     "whereWeAreLocated": {

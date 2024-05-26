@@ -19,6 +19,11 @@
 
   <main>
     <section>
+    <section class="banner">
+      <div class="container text-white">
+        <h1>Blog</h1>
+      </div>
+    </section>
       <div class="container">
         <div class="col-100 text-center">
           <p><strong><em>Explore a world of gastronomic delights and culinary inspiration with BeFoodie, where we share delicious recipes, insightful cooking tips, and delightful food stories to satisfy your inner foodie.</em
@@ -31,7 +36,7 @@
       <div class="row">
         <div class="col-50"> 
           <h3>Contributions</h3>
-          <p><span>↓<span></p> 
+          <p class="zarovnajsa"><span class="uzsomzarovany">↓</span></p> 
         </div>
         <div class="col-50 text-left">
           <h3>Commit To Our Forum</h3>
@@ -62,5 +67,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
+
 </body>
 </html>

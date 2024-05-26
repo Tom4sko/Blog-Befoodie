@@ -1,7 +1,7 @@
 <footer class="container bg-dark text-white">
     <div class="row">
         <?php
-        $footerData = json_decode(file_get_contents('database/footerdata.json'), true);
+        $footerData = json_decode(file_get_contents('jsons/footerdata.json'), true);
 
         function renderColumn($title, $content)
         {

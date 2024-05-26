@@ -25,7 +25,7 @@
     <section class="container">
         <div class="row">
             <?php
-            $json_data = file_get_contents("database/portfoliodata.json");
+            $json_data = file_get_contents("jsons/portfoliodata.json");
             $data = json_decode($json_data);
 
             $count = 0;
