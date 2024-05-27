@@ -40,9 +40,10 @@
             <h2>Savoring flavors, sharing stories, celebrating culinary passions.</h2>
           </div>
           <div class="col-50">
-            <?php
+          <?php
               include "components/hours.php";
-            ?>
+              pridajPozdrav();
+          ?>
             <p>Welcome to BeFoodie, where passion meets palate! Dive into a world of culinary delights and gastronomic adventures. Whether you're a seasoned chef or a kitchen novice, our collection of tantalizing recipes, cooking tips, and food stories will satisfy your cravings and inspire your culinary creativity. Join us on this flavorful journey as we explore the art of cooking and the joy of sharing delicious meals with loved ones. Let's embark on a mouthwatering adventure together!.</p>
             <p>Discover the essence of food through our lens – where every dish tells a story, every flavor evokes a memory, and every meal is an opportunity to create unforgettable moments. At BeFoodie, we're not just about recipes; we're about fostering a community united by a love for all things food. Whether you're seeking kitchen inspiration, culinary guidance, or simply a place to connect with fellow food enthusiasts, you've found your home here. Let's savor the journey together, one bite at a time.</p>
           </div>

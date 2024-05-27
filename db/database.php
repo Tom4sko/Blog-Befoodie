@@ -35,6 +35,18 @@
             password VARCHAR(255),
             role VARCHAR(50) NOT NULL DEFAULT 'user'
         )");
-        echo "Table created.<br>";
+        echo "Table 'users' created.<br>";
+    }
+
+    $stmt = $pdo->query("SHOW TABLES LIKE 'recipes'");
+    if ($stmt->rowCount() == 0) {
+        $pdo->query("CREATE TABLE recipes (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            user_id INT,
+            name VARCHAR(45),
+            ingredients VARCHAR(120),
+            description TEXT
+        )");
+        echo "Table 'recipes' created.<br>";
     }
 ?>
