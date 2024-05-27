@@ -292,6 +292,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .recipe {
@@ -511,4 +512,16 @@ input[type="submit"]:hover {
 
 .dashboard-button {
   max-width: 500px;
+}
+
+.button-recipe {
+  background-color: #191919 !important;
+  color: white !important;
+  border-radius: 12px;
+  max-width: 120px;
+}
+
+.button-recipe:hover {
+  background-color: orange !important;
+  color: black !important;
 }
