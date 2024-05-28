@@ -19,21 +19,32 @@
         echo "<p><strong>Ingrediencie:</strong> " . htmlspecialchars($recipe['ingredients']) . "</p>";
         echo "<p><strong>Popis:</strong> " . htmlspecialchars($recipe['description']) . "</p>";
 
-        if ($user_id) {
-            // Tlačidlo na editáciu
-            echo "<form action='edit_recipe.php' method='POST' style='display:inline;'>";
+        // Tlačidlo na editáciu
+        if ($user_id && ($user_role === 'admin' || $recipe['user_id'] === $user_id)) {
+            echo "<form action='db/edit_recipe.php' method='POST' style='display:inline;'>";
             echo "<input type='hidden' name='recipe_id' value='" . $recipe['id'] . "'>";
             echo "<input class='button-recipe' type='submit' value='Edit'>";
             echo "</form>";
-
-            // Tlačidlo na mazanie (len pre admina alebo vlastníka receptu)
-            if ($user_role === 'admin' || $recipe['user_id'] === $user_id) {
-                echo "<form action='db/delete_recipe.php' method='POST' style='display:inline;' onsubmit='return confirm(\"Are you sure you want to delete this recipe?\");'>";
-                echo "<input type='hidden' name='recipe_id' value='" . $recipe['id'] . "'>";
-                echo "<input class='button-recipe' type='submit' value='Delete'>";
-                echo "</form>";
-            }
         }
+
+        // Tlačidlo na mazanie (len pre admina alebo vlastníka receptu)
+        if ($user_role === 'admin' || $recipe['user_id'] === $user_id) {
+            echo "<form action='db/delete_recipe.php' method='POST' style='display:inline;' onsubmit='return confirm(\"Are you sure you want to delete this recipe?\");'>";
+            echo "<input type='hidden' name='recipe_id' value='" . $recipe['id'] . "'>";
+            echo "<input class='button-recipe' type='submit' value='Delete'>";
+            echo "</form>";
+        }
+
+        // Zobrazíme formulár na úpravu receptu pod daným receptom
+        echo "<div class='edit-recipe-form' style='display:none;'>";
+        echo "<form action='db/edit_recipe.php' method='POST'>";
+        echo "<input type='hidden' name='recipe_id' value='" . $recipe['id'] . "'>";
+        echo "<input type='text' name='new_recipe_name' value='" . htmlspecialchars($recipe['name']) . "'>";
+        echo "<textarea name='new_recipe_ingredients'>" . htmlspecialchars($recipe['ingredients']) . "</textarea>";
+        echo "<textarea name='new_recipe_description'>" . htmlspecialchars($recipe['description']) . "</textarea>";
+        echo "<input type='submit' value='Save'>";
+        echo "</form>";
+        echo "</div>";
 
         echo "</div>";
     }
