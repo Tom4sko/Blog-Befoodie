@@ -1,6 +1,9 @@
 <?php
     require "database.php";
 
+    $databaza = new Database();
+    $pdo = $databaza->getPdo();
+
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 

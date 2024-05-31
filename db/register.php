@@ -1,6 +1,9 @@
 <?php
     include 'database.php';
 
+    $databaza = new Database();
+    $pdo = $databaza->getPdo();
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register-email'])) {
         $name = $_POST['register-name'];
         $email = $_POST['register-email'];

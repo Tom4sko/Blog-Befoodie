@@ -1,6 +1,9 @@
 <?php
 require_once 'database.php';
 
+$databaza = new Database();
+$pdo = $databaza->getPdo();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
 

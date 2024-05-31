@@ -5,6 +5,9 @@
         session_start();
     }
 
+    $databaza = new Database();
+    $pdo = $databaza->getPdo();
+
     $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
     $user_role = isset($_SESSION['user_role']) ? $_SESSION['user_role'] : null;
 

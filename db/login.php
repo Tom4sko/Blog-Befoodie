@@ -1,6 +1,9 @@
 <?php
 include 'database.php';
 
+$databaza = new Database();
+$pdo = $databaza->getPdo();
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login-email'])) {
@@ -15,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login-email'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_name'] = $user['name'];
         $_SESSION['user_role'] = $user['role'];
-        echo 'Login successful!';
         header('Location: ../index.php');
         exit;
     } else {

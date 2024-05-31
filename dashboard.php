@@ -21,6 +21,9 @@
 <?php
     require "db/database.php";
 
+    $databaza = new Database();
+    $pdo = $databaza->getPdo();
+
     if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin') {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = $_POST['id'];
