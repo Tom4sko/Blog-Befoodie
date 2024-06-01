@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+require_once 'database.php';
 
 $databaza = new Database();
 $pdo = $databaza->getPdo();
