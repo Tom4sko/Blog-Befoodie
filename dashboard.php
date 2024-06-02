@@ -14,16 +14,18 @@
 <body>
   
   <?php
-    include "components/navbar.php"
+    include "components/navbar.php";
   ?> 
 
 <main class="dashboard-main">
 <?php
     require "db/database.php";
 
+    // Vytvorenie inštancie triedy Database a získanie PDO pripojenia
     $databaza = new Database();
     $pdo = $databaza->getPdo();
 
+    // Skontrolovanie, či je používateľ administrátor
     if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin') {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = $_POST['id'];
@@ -31,14 +33,17 @@
             $email = $_POST['email'];
             $role = $_POST['role'];
 
+            // SQL príkaz na aktualizáciu používateľských údajov
             $sql = "UPDATE users SET name=?, email=?, role=? WHERE id=?";
-            $stmt= $pdo->prepare($sql);
+            $stmt = $pdo->prepare($sql);
             $stmt->execute([$name, $email, $role, $id]);
         }
 
+        // SQL príkaz na získanie všetkých používateľov
         $sql = "SELECT id, name, email, role, password FROM users";
         $stmt = $pdo->query($sql);
 
+        // Vytvorenie tabuľky pre zobrazenie používateľov
         echo "<br><br><br><br>";
         echo "<table class='user-table'>";
         echo "<tr><th>ID</th><th>Meno</th><th>Email</th><th>Heslo</th><th>Rola</th><th>Vymazať</th></tr>";
@@ -54,6 +59,7 @@
         }
         echo "</table>";
 
+        // Formulár na zmenu používateľských údajov
         echo "<br><br><br><br>";
         echo "<form method='post'>";
         echo "<h2 class='dashboard-text'>Zmena Udajov</h2>";
@@ -61,7 +67,7 @@
         echo "<input class='dashboard-input' type='text' name='id' placeholder='ID používateľa'><br>";
         echo "<input class='dashboard-input' type='text' name='name' placeholder='Meno'><br>";
         echo "<input class='dashboard-input' type='email' name='email' placeholder='Email'><br>";
-        echo "<select class='dashboard-radio'name='role'>
+        echo "<select class='dashboard-radio' name='role'>
                     <option value='admin'>Admin</option>
                     <option value='user'>User</option>
                 </select><br>";
@@ -70,13 +76,14 @@
 
         echo "<br><br><br><br>";
     } else {
+        // Ak používateľ nie je administrátor, zobrazí sa správa o nedostatočných oprávneniach
         echo "<br><br><br><p class='color-theme'>Prístup len pre administrátorov.</p><br><br><br>";
     }
 ?>
 </main>
 
   <?php
-    include "components/footer.php"
+    include "components/footer.php";
   ?>
 
 </body>
