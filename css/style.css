@@ -21,7 +21,7 @@ h4,h5,h6{
 p{
   font-size:16px;
 }
-h1,h2,h3,h4,h5,h6,p,a,li{
+h1,h2,h3,h4,h5,h6,a,li{
   margin-bottom: 0.7em;
 }
 main{
@@ -352,6 +352,7 @@ form {
   justify-content: space-between;
   background-color: #191919;
   color: #FAFAFA;
+  margin: 0 !important;
 }
 
 .color-theme {
@@ -612,4 +613,12 @@ input[type="submit"]:hover {
 .error-button:hover {
   background-color: white;
   color: black;
+}
+
+.registration-alert {
+  background-color: #191919;
+  color: white;
+  padding-top: 10rem;
+  font-size: 40px;
+  padding-left: 80px;
 }

@@ -35,7 +35,7 @@
                 // Vykonanie príkazu s údajmi poskytnutými používateľom
                 $stmt->execute([$name, $email, $hashedPassword, $role]);
 
-                header('Location: registerlogin.php');
+                header('Location: registerlogin.php?success=true');
                 exit();
             }
         }
@@ -44,4 +44,8 @@
     // Vytvorenie inštancie triedy UserRegistration a volanie metódy registerUser
     $userRegistration = new UserRegistration();
     $userRegistration->registerUser();
+
+    if (isset($_GET['success']) && $_GET['success'] === 'true') {
+        echo "<p class='registration-alert'>Registrácia prebehla úspešne, teraz sa prihlaste!</p>";
+    }
 ?>
